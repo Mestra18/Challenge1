@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de textos</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="logo">
+    <img src="./assets/logo.png" alt="">
+  </header>  
+  <main>    
+    <section class="container">
+      <div class="content_ppal">
+        <div class="box">
+          <input class="box_text" type="text" placeholder="Ingrese el texto aquí.">
+        </div>
+        <div class="buttons">
+            <div class="info_buttons">
+              <img class="info_buttons-img" src="./assets/signo-admiracion.png" alt="">
+              <h6 class="info_buttons-h6">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="all_btns">
+              <input class="btn_encriptar btns" id="btn_encriptar" type="button" onclick="btnencriptar();" value="Encriptar"></input>
+              <input class="btn_desencriptar btns" id="btn_desencriptar" type="button" onclick="btndesencriptar();" value="Desencriptar"></input>
+            </div>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="sidebar_info">
+          <div class="doll img">
+            <img src="./assets/muñeco.png" alt="">
+          </div>
+          <div class="doll_info">
+            <div class="texto_encriptado" id="texto_encriptado">
+              <h3 class="doll_info-h3">Ningún mensaje fue encontrado</h3>
+              <p class="doll_info-p">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="textarea">
+              <div class="candado1">
+                <img src="./assets/candado1.png" alt="">
+              </div>
+              <div class="candado2">
+                <img src="./assets/candado2.png" alt="">
+              </div>
+              <h2 class="doll_info-h3 encriptado">Texto Encriptado.</h2>
+              <h2 class="doll_info-h3 desencriptado">Texto Desencriptado.</h2>
+              <textarea id="textareaCopy" cols="30" rows="9" class="textarea__text"></textarea>
+              <input class="btn_copiar btns" id="btnCopiar" type="button" value="Copiar"></input>
+            </div>
+            <div class="mensaje__copy">
+              <p>Copiado al porta papeles!</p>
+            </div>           
+          </div>      
+        </div>
+      </aside>    
+    </section>
+</main>
+  <footer class="credits"><p class="credits_p">Aplicación creada por <span class="credits_span">Iván Mestra</span> - © Todos los derechos reservados.</p></footer> 
+</body>
+<script src="./js/javascript.js"></script>
+</html>
