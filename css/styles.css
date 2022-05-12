@@ -156,6 +156,7 @@ body{
   border: none;
   outline: none;
   cursor: pointer;
+  transition: .5s;
 }
 
 @media screen and (min-width: 768px){
@@ -167,6 +168,10 @@ body{
 @media screen and (min-width: 1024px){
   .btns{
     width: 230px;
+  }
+  .btns:hover{    
+    border-radius: 14px;
+    letter-spacing: 2px;
   }
 }
 
